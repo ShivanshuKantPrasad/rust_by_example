@@ -16,12 +16,15 @@ fn main(){
 
     // `Structure` is printable!
     println!("Now {:?} will print!", Structure("3".to_string()));
+    println!("Now {:#?} will print!", Structure("3".to_string()));
     
     // The problem with `derive` is there is no control over how
     // the results look. What if I want this to just show a `7`?
     println!("Now {:?} will print!", Deep(Structure("7".to_string())));
+    println!("Now {:#?} will print!", Deep(Structure("7".to_string())));
 
     let o = Empty;
 
     println!("Now {:?} will print!", o);
+    println!("Now {:#?} will print!", o);
 }
