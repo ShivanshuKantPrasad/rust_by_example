@@ -2,7 +2,7 @@ static LANGUAGE: &str = "Rust";
 const THRESHOLD: i32 = 10;
 
 fn is_big(n: i32) -> bool {
-    n > THRESHOLD;
+    n > THRESHOLD
 }
 
 fn main() {
@@ -10,7 +10,7 @@ fn main() {
 
     println!("This is {}", LANGUAGE);
     println!("The threshold is {}", THRESHOLD);
-    printnln!("{} is {}", n, if is_big(n) { "big" } else { "small" });
+    println!("{} is {}", n, if is_big(n) { "big" } else { "small" });
 
     // ERROR: Cannot modify a const
     // THRESHOLD = 5;
