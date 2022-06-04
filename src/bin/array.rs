@@ -5,13 +5,14 @@ fn analyze_slice(slice: &[i32]) {
     println!("the slice has {} elements", slice.len());
 }
 
-fn main(){
+fn main() {
     analyze_slice(&[8, 9, 6, 8]);
 
     let xs: [i32; 5] = [1, 2, 3, 4, 5];
     let ys: [i32; 500] = [0; 500];
 
-    analyze_slice(&xs); analyze_slice(&ys);
+    analyze_slice(&xs);
+    analyze_slice(&ys);
 
     println!("first element of the array: {}", xs[0]);
     println!("second element of the array: {}", xs[1]);

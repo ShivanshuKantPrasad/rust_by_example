@@ -1,4 +1,4 @@
-fn main(){
+fn main() {
     let logical: bool = true;
 
     let a_float: f64 = 1.0;
@@ -15,8 +15,7 @@ fn main(){
 
     // ERROR The type of variable can not be changed
     // mutable = true;
-    
+
     // Variables can be overwritten with shadowing
     let mutable = true;
-    
 }

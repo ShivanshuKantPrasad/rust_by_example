@@ -9,7 +9,6 @@ fn main() {
     println!("A boolean: {:?}", a_boolean);
     println!("Meet the unit value: {:?}", unit);
 
-
     let _unused_variable = 3u32;
 
     let noise_unused_variable = 2u32;
